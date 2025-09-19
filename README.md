@@ -16,29 +16,22 @@ If sprinkled on a chestnut bun, the number of buns doubles continuously.
 ---
 
 ## 🔧 Assumptions
-1. **Chestnut bun volume** (sphere, diameter 6 cm):  
-   \\( V_0 \approx 1.13 \times 10^{-4} \, m^3 \\)
-
-2. **Solar system volume** (sphere, radius = Neptune orbit ≈ 30.07 AU):  
-   \\( V_{solar} \approx 3.81 \times 10^{38} \, m^3 \\)
-
-3. **Doubling period**:  
-   \\( dt = 5 \, \text{minutes} \\)
-
+- Bun volume: `V0 ≈ 1.13 × 10^-4 m³`  
+- Solar system volume: `Vsolar ≈ 3.81 × 10^38 m³`  
+- Doubling period: `dt = 5 minutes`
 ---
 
 ## 🧮 Formula Derivation
-At time \\(t\\):
+At time `t`:
 
-- Initial: \\( V(0) = V_0 \\)  
-- After n doublings:  
-  \\[ V(t) = V_0 \cdot 2^{t/dt} \\]
+- `V(0) = V0`  
+- `V(t) = V0 · 2^(t/dt)`  
 
-We want time \\(T\\) such that:  
-\\[ V_{solar} = V_0 \cdot 2^{T/dt} \\]
+We want time `T` such that:  
+`Vsolar = V0 · 2^(T/dt)`  
 
-Solving for T:  
-\\[ T = dt \cdot \log_2 \left( \frac{V_{solar}}{V_0} \right) \\]
+Solving for `T`:  
+`T = dt · log2(Vsolar / V0)`
 
 ---
 
@@ -61,7 +54,10 @@ Solving for T:
 ---
 
 ## 📉 Growth Curve
+
 The exponential growth of buns filling the solar system:
+
+![Growth Curve](figures/growth.png)
 
 
 ---
